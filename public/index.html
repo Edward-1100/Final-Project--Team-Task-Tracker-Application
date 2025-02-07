@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Team Task Tracker</title>
+        <link rel="stylesheet" href="/css/styles.css">
+
+    </head>
+
+    <br><br>
+
+    <body>
+
+        <header class="content">
+
+            <h5>Team Task Tracker</h5>
+
+        </header>
+
+        <br><br><br>
+
+        <main>
+
+            <section id="task-form">
+
+                <div class="content">
+
+                    <br>
+
+                    <h2>Create a Task</h2>
+
+                    <br>
+
+                    <form id="new-task-form">
+
+                        <label for="task-title">Task Title:</label>
+                        <input type="text" id="task-title" required>
+                        
+                        <br><br><br>
+                        
+                        <label for="task-desc">Description:</label>
+                        <textarea id="task-desc" required></textarea>
+
+                        <br><br><br>
+                        
+                        <label for="task-due">Due Date:</label>
+                        <input type="date" id="task-due" required>
+
+                        <br><br><br>
+
+                        <label for="task-priority">Priority:</label>
+                        <select id="task-priority">
+
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+
+                        </select>
+
+                        <br><br><br>
+                        
+                        <button type="submit">Add Task</button>
+
+                        <br><br><br>
+                        
+                    </form>
+
+                </div>
+
+            </section>
+
+            <br><br>
+
+            <section id="task-list">
+
+                <div class="content">
+
+                    <h2>Task List</h2>
+                    <br><br>
+
+                    <ul id="tasks"></ul>
+                    <br><br>
+
+                </div>
+
+            </section>
+
+            <br><br><br>
+
+        </main>
+        
+        <script src="/js/taskManager.js"></script>
+
+    </body>
+
+</html>
