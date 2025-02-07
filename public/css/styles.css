@@ -67,3 +67,7 @@ h6 {
     font-family: Alternian;
     src: url(hiveswap-alternian.ttf);
 }
+
+ul{
+    list-style: none;
+}
